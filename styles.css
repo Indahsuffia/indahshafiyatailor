@@ -1,0 +1,161 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+p, .card-text, .form-group label {
+    font-size: 1.2rem;
+}
+
+/* Welcome Section */
+.welcome-section {
+    height: 100vh;
+    background: url('welcome-background.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(241, 241, 241, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section .content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* About Section, Services Section, Contact Section, Gallery Section */
+/* Additional Styles for Owner Profile */
+.owner-profile-img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.owner-profile h1, .owner-profile h3 {
+    font-family: 'Georgia', serif;
+    color: #5a3d5c;
+}
+
+.owner-profile p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.owner-profile ul {
+    padding-left: 0;
+    list-style: none;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Gallery Section */
+.card-columns {
+    column-count: 3;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-text.price {
+    font-weight: bold;
+    color: #5a3d5c;
+}
+
+@media (max-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #ecb245ea;
+}
+
+footer p {
+    margin: 0;
+}
